@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nisarga Enterprises - Interior & Exterior Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- SEO & Social Media -->
+<meta name="description" content="Nisarga Enterprises - Expert in Interior & Exterior Designer Works, Davanagere. Elegant and functional designs for homes, offices & commercial spaces.">
+<meta property="og:title" content="Nisarga Enterprises">
+<meta property="og:description" content="Elegant and functional designs for homes, offices & commercial spaces.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; scroll-behavior: smooth; }
+    header {
+        text-align: center; padding: 40px 20px;
+        background: linear-gradient(135deg, #2e7d32, #66bb6a);
+        color: white;
+    }
+    header img { max-width: 180px; animation: fadeIn 2s ease-in-out; }
+    header h1 { margin-top: 15px; font-size: 2rem; }
+    header p { font-size: 1.1rem; margin-top: 5px; opacity: 0.9; }
+
+    /* Navigation */
+    nav {
+        background: #1b5e20; text-align: center; padding: 12px 0; position: sticky; top: 0; z-index: 999;
+    }
+    nav a {
+        color: white; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd54f; }
+
+    /* Mobile Menu */
+    .menu-toggle { display: none; cursor: pointer; font-size: 1.5rem; color: white; }
+    @media (max-width: 768px) {
+        nav a { display: none; }
+        nav.active a { display: block; margin: 10px 0; }
+        .menu-toggle { display: block; }
+    }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; opacity: 0; transform: translateY(50px); transition: 0.8s; }
+    h2 { color: #2e7d32; font-size: 1.8rem; margin-bottom: 20px; text-align: center; }
+
+    /* Services & Gallery */
+    .services, .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .service, .gallery-item {
+        flex: 1 1 calc(30% - 20px); background: white; padding: 20px; border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s;
+    }
+    .service:hover, .gallery-item:hover { transform: translateY(-5px); }
+    .gallery-item img { width: 100%; border-radius: 8px; }
+
+    /* Contact Button & Form */
+    .contact-btn {
+        display: inline-block; background: #2e7d32; color: white; padding: 10px 20px; border-radius: 6px;
+        text-decoration: none; font-weight: bold; transition: background 0.3s;
+    }
+    .contact-btn:hover { background: #1b5e20; }
+    form input, form textarea {
+        width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc;
+    }
+    form button {
+        background: #2e7d32; color: white; padding: 10px 20px; border: none; border-radius: 6px;
+        cursor: pointer; font-weight: bold;
+    }
+    form button:hover { background: #1b5e20; }
+
+    footer {
+        background: #1b1b1b; color: white; text-align: center; padding: 20px; font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+    }
+    @media (max-width: 768px) {
+        .service, .gallery-item { flex: 1 1 100%; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Nisarga Enterprises Logo">
+    <h1>Nisarga Enterprises</h1>
+    <p>Interior & Exterior Designer Works</p>
+</header>
+
+<nav>
+    <span class="menu-toggle">&#9776; Menu</span>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>At Nisarga Enterprises, we create elegant and functional spaces for homes, offices, and commercial buildings. 
+    With years of experience in both interior and exterior design, we bring creativity, quality, and attention to detail to every project.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service"><h3>Interior Design</h3><p>Modern, stylish, and practical interiors tailored to your needs.</p></div>
+        <div class="service"><h3>Exterior Design</h3><p>Beautiful and lasting exterior makeovers to enhance property value.</p></div>
+        <div class="service"><h3>Custom Projects</h3><p>Personalized designs to match unique styles and requirements.</p></div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-item"><img src="project1.jpg" alt="Interior Project"></div>
+        <div class="gallery-item"><img src="project2.jpg" alt="Exterior Project"></div>
+        <div class="gallery-item"><img src="project3.jpg" alt="Custom Project"></div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Owner:</strong> Srinivas Murthy Y</p>
+    <p><strong>Address:</strong> Near SBI Bank, HKR Circle, Nituvalli, Davanagere</p>
+    <p><strong>Phone:</strong> 9448534659, 8310092069</p>
+    <p><a class="contact-btn" href="https://maps.google.com/?q=Near+SBI+Bank+HKR+Circle+Nituvalli+Davanagere" target="_blank">📍 View on Google Maps</a></p>
+    
+    <h3 style="margin-top:20px;">Send us a Message</h3>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Nisarga Enterprises | Designed with ❤️
+</footer>
+
+<script>
+    // Fade-in animation when scrolling
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+        sections.forEach(sec => {
+            const rect = sec.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                sec.style.opacity = 1;
+                sec.style.transform = "translateY(0)";
+            }
+        });
+    });
+
+    // Mobile menu toggle
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+        document.querySelector("nav").classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
